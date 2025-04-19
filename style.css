@@ -207,12 +207,11 @@ main {
     background-color: #fff;
     outline: 1px solid red;
 }
-/* .first:hover{
-    color: var(--primary-blue-color);
-} */
+
 .active a {
     border-bottom: 2px solid var(--primary-gold-color);
 }
+
 
 /* -------------------- Responsive ----------------------------------------- */
 
