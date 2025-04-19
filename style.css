@@ -4,6 +4,7 @@
     --primary-blue-color: #072f5f;
     --primary-gold-color: #FFC107;
     --first-letters: #2c3968;
+    --primary-white-color: #fff;
 }
 
 * {
@@ -177,7 +178,7 @@ main {
 }
 
 .first {
-    color: #fff;
+    color: var(--primary-white-color);
 }
 
 .second {
@@ -204,7 +205,7 @@ main {
 }
 
 .main-btn button:last-child {
-    background-color: #fff;
+    background-color: var(--primary-white-color);
     outline: 1px solid red;
 }
 
