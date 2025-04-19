@@ -13,6 +13,7 @@
 
 body {
     overflow-x: hidden;
+    width: auto;
 }
 
 /* ------------------- Navigation Bar -------------------------------- */
@@ -190,6 +191,7 @@ main {
     letter-spacing: 1px;
     width: 12rem;
     height: 4rem;
+    border-radius: 12px;
     border: none;
     margin: 1rem 1rem 0 0;
     background-color: var(--primary-blue-color);
@@ -197,16 +199,17 @@ main {
 }
 
 .main-btn button:hover {
-    outline: 1px solid red;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--primary-gold-color);
+    transition-duration: 400ms;
 }
 
 .main-btn button:last-child {
     background-color: #fff;
     outline: 1px solid red;
 }
-
+/* .first:hover{
+    color: var(--primary-blue-color);
+} */
 .active a {
     border-bottom: 2px solid var(--primary-gold-color);
 }
@@ -217,7 +220,7 @@ main {
     .navigation-container>ul {
         display: none;
     }
-
+    
     .navigation-container {
         justify-content: space-between;
         margin-right: 20px;
