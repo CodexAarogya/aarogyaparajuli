@@ -220,7 +220,7 @@ main {
     .navigation-container>ul {
         display: none;
     }
-    
+
     .navigation-container {
         justify-content: space-between;
         margin-right: 20px;
@@ -297,6 +297,7 @@ main {
         font-size: medium;
         font-weight: 500;
     }
+
     .logo-container img {
         width: 80px;
         height: 80px;
