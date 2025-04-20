@@ -23,15 +23,16 @@ header {
     top: 0;
     position: sticky;
     background-color: var(--primary-white-color);
-    height: 12vh;
+    height: 10vh;
     z-index: 5;
 }
 
 .navigation-container {
     display: flex;
     justify-content: space-around;
+    height: 8vh;
     align-items: center;
-    font-family: var(--poppins-font-regular);
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -41,7 +42,6 @@ header {
     flex-flow: row wrap;
     gap: 20px;
     justify-content: center;
-
 }
 
 .navigation-container li {
@@ -53,6 +53,7 @@ header {
     text-decoration: none;
     padding: 19px;
     box-sizing: border-box;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     color: var(--primary-blue-color);
 }
@@ -81,8 +82,8 @@ header {
 }
 
 .logo-container img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
 
 .menu-container {
@@ -314,6 +315,11 @@ footer ul li {
         justify-content: space-between;
     }
 
+    .navigation-container {
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+
     .navigation-container>ul {
         display: none;
     }
@@ -406,46 +412,56 @@ footer ul li {
     }
 }
 
-@media only screen and (max-width: 450px){
-    .menu-container img{
+@media only screen and (max-width: 450px) {
+    .menu-container img {
         width: 18px;
         height: 18px;
     }
+
     .hero-text::first-letter {
         font-size: 5rem;
     }
-    .top-hero-container{
+
+    .top-hero-container {
         text-align: center;
     }
+
     .hero-text {
         font-size: 2rem;
     }
-    .hero-text button{
+
+    .hero-text button {
         margin: auto;
         top: 40vh;
     }
+
     .left-contact-section img {
         padding: 10px;
         width: 30px;
         height: 30px;
     }
+
     .left-contact-section p {
         font-size: 10px;
     }
-    form{
+
+    form {
         font-size: 12px;
     }
-    .input-container button{
+
+    .input-container button {
         font-size: 12px;
     }
-    footer{
+
+    footer {
         font-size: 11px;
         letter-spacing: 0.5px;
         gap: 0px;
     }
+
     footer ul img {
         width: 20px;
         height: 20px;
     }
-  
+
 }
