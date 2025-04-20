@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Aarogya Parajuli</title>
     <link rel="stylesheet" href="contact.css">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
 </head>
 
 <body>
+    <script>
+        window.onloadTurnstileCallback = function () {
+            turnstile.render("#my-capcha", {
+                sitekey: "0x4AAAAAABPzHsNn-WgBQaTE",
+                callback: function (token) {
+                    console.log(`Challenge Success ${token}`);
+                    setTimeout(() => {
+                        document.querySelector(".container").style.display = "none";
+                        document.getElementById("my-capcha").style.display = "none";
+                    }, 2000);
+                },
+            });
+        };
+    </script>
     <header>
+        <div class="container">
+
+            <div id="my-capcha"></div>
+        </div>
         <div class="navigation-container">
             <div class="logo-container">
                 <span><a href="https://aarogyaparajuli.com.np"><img src="/images/logo-AP.svg" alt="logo"></a></span>
@@ -39,10 +58,10 @@
                         <span><img src="/icons/address-icon.svg" alt="address""></span>
                         <p>Street 123, Kathmandu, Nepal</p>
                     </div>
-                    <div class="mail-box" title="aarogyaparajuli07@gmail.com">
-                        <span><img src="/icons/envelope-icon.svg" alt="address"></span>
-                        <p>Click here to mail me
-                        </p>
+                    <div class=" mail-box" title="aarogyaparajuli07@gmail.com">
+                            <span><img src="/icons/envelope-icon.svg" alt="address"></span>
+                            <p>Click here to mail me
+                            </p>
                     </div>
                 </div>
                 <div class="lower">
@@ -51,28 +70,29 @@
                         <p>Connect with me on Instagram. <br> 
                         Click to reach instagram profile</p>
                     </div>
-                    <div class="github-box">
-                        <span><img src="/icons/github-icon.svg" alt="address" ></span>
-                        <p>Follow me on Github. <br>Click to reach Github Profile</p>
+                    <div class=" github-box">
+                            <span><img src="/icons/github-icon.svg" alt="address"></span>
+                            <p>Follow me on Github. <br>Click to reach Github Profile</p>
                     </div>
                 </div>
             </div>
             <div class="right-contact-section">
-                
+
                 <form>
                     <div class="input-container">
-                    <label for="fname">First Name</label>
-                    <input type="text" name="fname" id="fname" required>
-                    <label for="fname">Last Name</label>
-                    <input type="text" name="lname" id="lname" required>
-                    <label for="fname">Email</label>
-                    <input type="email" name="email" id="email" required>
-                    <label for="fname">Contact</label>
-                    <input type="tel" name="contact-no" id="contact-no">
-                    <label for="fname">Description</label>
-                    <input type="text" name="description" id="description" placeholder="Please enter your  queries ...">
-                    <button type="submit">Submit</button>
-                </div>
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname" required>
+                        <label for="fname">Last Name</label>
+                        <input type="text" name="lname" id="lname" required>
+                        <label for="fname">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="fname">Contact</label>
+                        <input type="tel" name="contact-no" id="contact-no">
+                        <label for="fname">Description</label>
+                        <input type="text" name="description" id="description"
+                            placeholder="Please enter your  queries ...">
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -81,8 +101,10 @@
         <p>Copyright &copy; | <a href="aarogyaparajuli.com.np">Aarogya Parajuli</a> | All Rights Reserved</p>
         <ul>
             <li><a href="https://github.com/CodexAarogya"><img src="/icons/github-white-icon.svg" alt="github"></a></li>
-            <li><a href="https://www.linkedin.com/in/aarogyaparajuli"><img src="/icons//linkedin-app-white-icon.svg" alt="linkedin"></a></li>
-            <li><a href="https://www.instagram.com/aarogya_prj"><img src="/icons/instagram-white-icon.svg" alt="instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/aarogyaparajuli"><img src="/icons//linkedin-app-white-icon.svg"
+                        alt="linkedin"></a></li>
+            <li><a href="https://www.instagram.com/aarogya_prj"><img src="/icons/instagram-white-icon.svg"
+                        alt="instagram"></a></li>
         </ul>
     </footer>
 </body>
