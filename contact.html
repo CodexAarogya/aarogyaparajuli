@@ -6,35 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Aarogya Parajuli</title>
     <link rel="stylesheet" href="contact.css">
+    <script src="contact.JS"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
-    <script>
-        window.onload = () => {
-            document.body.style.visibility = 'visible';
-        };
 
-        window.onloadTurnstileCallback = function () {
-            turnstile.render("#my-capcha", {
-                sitekey: "0x4AAAAAABPzHsNn-WgBQaTE",
-                callback: function (token) {
-                    console.log(`Challenge Success ${token}`);
-                    setTimeout(() => {
-                        const overlay = document.querySelector(".container");
-                        overlay.classList.add("fade-out");
-
-                        setTimeout(() => {
-                            overlay.style.display = "none";
-                        }, 1000);
-                    }, 3000);
-                },
-            });
-        };
-    </script>
 </head>
 
 <body>
-    <div class="container">
-        <div id="my-capcha"></div>
-    </div>
+    
     <header>
         <div class="navigation-container">
             <div class="logo-container">
@@ -62,7 +40,7 @@
             <div class="left-contact-section">
                 <div class="upper">
                     <div class="address-box">
-                        <span><img src="/icons/address-icon.svg" alt="address""></span>
+                        <span><img src="/icons/address-icon.svg" alt="address"></span>
                         <p>Street 123, Kathmandu, Nepal</p>
                     </div>
                     <div class=" mail-box" title="aarogyaparajuli07@gmail.com">
@@ -98,6 +76,7 @@
                         <label for="fname">Description</label>
                         <input type="text" name="description" id="description"
                             placeholder="Please enter your  queries ...">
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAABPzHsNn-WgBQaTE"></div>
                         <button type="submit">Submit</button>
                     </div>
                 </form>

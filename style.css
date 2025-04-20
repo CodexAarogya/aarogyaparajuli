@@ -16,8 +16,29 @@ body {
     overflow-x: hidden;
     width: auto;
 }
+body {
+    visibility: hidden;
+}
 
 /* ------------------- Navigation Bar -------------------------------- */
+.container {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000ed;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    pointer-events: all;
+}
+
+.container.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
 .navigation-container {
     display: flex;
     justify-content: space-around;
