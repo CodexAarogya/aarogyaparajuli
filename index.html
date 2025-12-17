@@ -10,12 +10,12 @@
     <!-- NAVIGATION BAR STARTS -->
 
     <nav
-      class="flex justify-between box-border p-8 items-center ring-1 ring-gray-700 h-18 backdrop-blur-2xl top-0 sticky bg-linear-to-r/oklch from-indigo-500 to-teal-900"
+      class=" flex justify-between box-border p-8 items-center ring-1 ring-gray-700 lg:h-18 backdrop-blur-2xl top-0 sticky bg-linear-to-r/oklch from-indigo-500 to-teal-900 z-10"
     >
       <div>
         <h1 class="text-2xl">AAROGYA PARAJULI</h1>
       </div>
-      <div class="flex justify-center items-center space-x-6">
+      <div class="hidden lg:flex justify-center items-center space-x-6">
         <ul class="flex gap-6 p-2 space-x-2">
           <li class="hover:cursor-pointer"><a href="#">Home</a></li>
           <li class="hover:cursor-pointer"><a href="#">About</a></li>
@@ -24,7 +24,7 @@
           <li class="hover:cursor-pointer"><a href="#">Blog</a></li>
           <li class="hover:cursor-pointer"><a href="#">Contact</a></li>
         </ul>
-        <span class="w-10 h-10 rounded-full bg-gray-800 p-1">
+        <span class=" lg:w-10 lg:h-10 rounded-full bg-gray-800 p-1">
           <a href="mailto:aarogyaparajuli007@gmail.com"
             ><img src="/images/email-icon.svg" alt="mail-me"
           /></a>
@@ -34,13 +34,13 @@
 
     <!-- NAVIGATION BAR ENDS -->
     <!-- INTRO CONTAINER STARTS -->
-    <main class="grid grid-cols-2 ring-1 ring-amber-200 h-lvh bg-[#03001C]">
+    <div class="relative flex flex-col-reverse lg:grid lg:grid-cols-2 ring-1 ring-gray-800 h-lvh bg-[#03001C]">
       <div
-        class="font-[poppins] flex flex-col justify-center items-start p-10 box-border"
+        class="font-[poppins] flex flex-col justify-center items-start lg:p-10 box-border"
       >
         <div class="relative w-4/5 p-5 space-y-5 tracking-wide">
-          <div class="text-6xl md:text-8xl">Hello I'm</div>
-          <div class="tracking-wider text-6xl text-orange-500 md:text-7xl">
+          <div class="text-6xl lg:text-8xl">Hello I'm</div>
+          <div class="tracking-wider text-6xl text-orange-500 lg:text-7xl">
             AAROGYA
             <span
               class="ring-1 ring-offset-sky-100 rounded-full ml-2.5 animate-ping duration-1000"
@@ -52,10 +52,10 @@
           systems, writing clean code, and solving real-world problems with
           technology. I work with software, hardware, and everything in between.
         </div>
-        <div class="flex wrap-anywhere p-3">
+        <div class="flex p-3">
           <div>
             <button
-              class="relative w-28 h-28 rounded-full bg-linear-to-r from-purple-500 via-indigo-500 to-blue-500 md:hover:cursor-pointer md:hover:scale-110 duration-200"
+              class="relative w-28 h-28 rounded-full bg-linear-to-r from-purple-500 via-indigo-500 to-blue-500 lg:hover:cursor-pointer lg:hover:scale-110 duration-200"
             >
               Hire Me
               <span
@@ -65,15 +65,15 @@
           </div>
           <div>
             <button
-              class="relative w-28 h-28 rounded-full right-4 backdrop-blur-lg ring-1 ring-gray-600 md:hover:cursor-pointer md:hover:scale-110 duration-200"
+              class="relative w-28 h-28 rounded-full right-4 backdrop-blur-lg ring-1 ring-gray-600 lg:hover:cursor-pointer lg:hover:scale-110 duration-200"
             >
               My Work
             </button>
           </div>
         </div>
       </div>
-      <div class="flex justify-center items-center-safe">
-          <div class="max-w-2/3 max-h-1/2 md:max-h-8/12 overflow-hidden  rounded-full bg-gray-900 ring-1 ring-gray-700">
+      <div class="flex justify-center items-end lg:justify-center lg:items-center-safe">
+          <div class="max-w-2/3 max-h-3/5 lg:max-h-8/12 overflow-hidden  rounded-full bg-gray-900 ring-1 ring-gray-700">
              <img src="/images/DSC00242.png" alt="profile">
          </div>
       </div>
