@@ -1,92 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome | Aarogya Parajuli</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/images/logo-AP.svg" type="image/x-icon">
-    <script src="script.JS"></script>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
-</head>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-[#03001C] text-white">
+    <!-- NAVIGATION BAR STARTS -->
 
-<body>
-    <div class="container">
-        <p><h1 style="color: white;">Website is Currently under maintenance !</h1></p>
-        <div id="my-capcha"></div>
-    </div>
-    <header>
+    <nav
+      class="flex justify-between box-border p-8 items-center ring-1 ring-gray-700 h-18 backdrop-blur-2xl top-0 sticky bg-linear-to-r/oklch from-indigo-500 to-teal-900"
+    >
+      <div>
+        <h1 class="text-2xl">AAROGYA PARAJULI</h1>
+      </div>
+      <div class="flex justify-center items-center space-x-6">
+        <ul class="flex gap-6 p-2 space-x-2">
+          <li class="hover:cursor-pointer"><a href="#">Home</a></li>
+          <li class="hover:cursor-pointer"><a href="#">About</a></li>
+          <li class="hover:cursor-pointer"><a href="#">Stack</a></li>
+          <li class="hover:cursor-pointer"><a href="#">Projects</a></li>
+          <li class="hover:cursor-pointer"><a href="#">Blog</a></li>
+          <li class="hover:cursor-pointer"><a href="#">Contact</a></li>
+        </ul>
+        <span class="w-10 h-10 rounded-full bg-gray-800 p-1">
+          <a href="mailto:aarogyaparajuli007@gmail.com"
+            ><img src="/images/email-icon.svg" alt="mail-me"
+          /></a>
+        </span>
+      </div>
+    </nav>
 
-        <div class="navigation-container">
-            <div class="logo-container">
-                <span><a href="https://aarogyaparajuli.com.np"><img src="/images/logo-AP.svg" alt="logo"></a></span>
-            </div>
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="menu-container">
-                <a href="#"><img src="/icons/menu-icon.svg" alt="menu" width="24px" height="24px"></a>
-            </div>
+    <!-- NAVIGATION BAR ENDS -->
+    <!-- INTRO CONTAINER STARTS -->
+    <main class="grid grid-cols-2 ring-1 ring-amber-200 h-lvh bg-[#03001C]">
+      <div
+        class="font-[poppins] flex flex-col justify-center items-start p-10 box-border"
+      >
+        <div class="relative w-4/5 p-5 space-y-5 tracking-wide">
+          <div class="text-6xl md:text-8xl">Hello I'm</div>
+          <div class="tracking-wider text-6xl text-orange-500 md:text-7xl">
+            AAROGYA
+            <span
+              class="ring-1 ring-offset-sky-100 rounded-full ml-2.5 animate-ping duration-1000"
+            ></span>
+          </div>
         </div>
-    </header>
-    <main>
-        <div class="side-section">
-            <div class="reach-me-links">
-                <ul>
-                    <li title="Github"><a href="https://github.com/CodexAarogya" target="_blank"><img
-                                src="/icons/github-icon.svg" alt="instagram"></a></li>
-                    <li title="Linkedin"><a href="https://www.linkedin.com/in/aarogyaparajuli" target="_blank"><img
-                                src="/icons/linkedin-square-icon.svg" alt="linkedin"></a></li>
-                    <li title="aarogyaparajuli07@gmail.com"><a href="mailto:aarogyaparajuli07@gmail.com"><img
-                                src="/icons/envelope-icon.svg" alt="mail"></a></li>
-                    <li title="Instagram"><a href="https://www.instagram.com/aarogya_prj" target="_blank"><img
-                                src="/icons/black-instagram-icon.svg" alt="instagram"></a></li>
-
-                </ul>
-            </div>
+        <div class="p-6 border-l-3 border-gray-700">
+          I'm a Computer Engineering student passionate about building efficient
+          systems, writing clean code, and solving real-world problems with
+          technology. I work with software, hardware, and everything in between.
         </div>
-        <div class="content-section">
-            <div class="intro">
-                <div class="greeting"><span>H</span>i !</div>
-                <span class="before-name"> <span class="before-name-I">I</span> am <span class="name">Aarogya
-                        Parajuli</span>.</span>
-                <span>
-                    <p class="service-tag"> - &QUOT;AI/ML Enthusiast, Web-developer, UI/UX designer &QUOT;</p>
-                </span>
-                <br>
-                <hr>
-                <div class="description">
-                    I'm an undergraduate student pursuing a Bachelor's degree in Computer Science and Engineering,
-                    driven by a deep passion for building intelligent systems and beautiful digital experiences.
-
-                    Whether it's exploring the world of AI/ML, crafting engaging web applications, or designing
-                    intuitive UI/UX, I love turning ideas into real, impactful solutions.
-                    <br><br>
-                    &quot;<i>Design like an artist, think like a scientist, and build like an engineer.</i>&quot;
-                    <br>
-                    Check out my work, and feel free to reach out — I’m always up for new challenges!
-                </div>
-                <div class="main-btn">
-                    <button><a href="#" class="first">Resume</a></button>
-                    <button><a href="#" class="second">About</a></button>
-                </div>
-            </div>
-            <div class="main-profile">
-                <div class="profile-image">
-                    <img src="/images/main-profile-pic.svg" alt="profile">
-                </div>
-
-            </div>
+        <div class="flex wrap-anywhere p-3">
+          <div>
+            <button
+              class="relative w-28 h-28 rounded-full bg-linear-to-r from-purple-500 via-indigo-500 to-blue-500 md:hover:cursor-pointer md:hover:scale-110 duration-200"
+            >
+              Hire Me
+              <span
+                class="ring-1 ring-offset-4 rounded-full absolute right-7 top-7 size-14 mx-auto animate-ping"
+              ></span>
+            </button>
+          </div>
+          <div>
+            <button
+              class="relative w-28 h-28 rounded-full right-4 backdrop-blur-lg ring-1 ring-gray-600 md:hover:cursor-pointer md:hover:scale-110 duration-200"
+            >
+              My Work
+            </button>
+          </div>
         </div>
+      </div>
+      <div class="flex justify-center items-center-safe">
+          <div class="max-w-2/3 max-h-1/2 md:max-h-8/12 overflow-hidden  rounded-full bg-gray-900 ring-1 ring-gray-700">
+             <img src="/images/DSC00242.png" alt="profile">
+         </div>
+      </div>
     </main>
-    <!-- <div class="move-to-top">
-        <img src="/icons/go-to-top.png" alt="goto-top">
-    </div> -->
-
-</body>
-
+  </body>
 </html>
